@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <style>
+        .content-section {
+            min-height: 2000px;
+        }
+
+        .sidebar-section {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .sidebar-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .make-me-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+            padding: 0 15px;
+        }
+
+
+
+        /* Ignore This, just coloring */
+        body {
+            background: #fff;
+        }
+
+        article {
+            background: #f1f1f1;
+            border-radius: 12px;
+            padding: 25px 0 600px;
+        }
+
+
+        .title-section,
+        .content-section,
+        .sidebar-section {
+            background: #fff;
+        }
+
+        .title-section {
+            text-align: center;
+            padding: 50px 15px;
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            text-align: center;
+            margin: 0;           
+        }
+        .section_show {
+            margin: 3rem 0;
+        }
+        .sidebar-item {
+            text-align: center;
+        }
+
+        .sidebar-item h3 {
+            background: gold;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 50px 0 100px;
+            min-height: 100vh;
+            border-bottom: solid 1px #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5">
+                    <div class="sidebar-item">
+                        <div class="make-me-sticky" id="item_list">
+                                <h3 class="d-flex align-items-center justify-content-center h-100">Item 1</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="content-section">
+                        <div class="section_show p-5" id="section1">
+                            <h2 class="mb-3">Content Section1</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos recusandae, culpa odit ipsum reiciendis! Repellat fugit ut, suscipit sit aperiam facilis error. Impedit iusto repudiandae dignissimos veniam! Officia, optio!
+                                Officiis sequi corporis exercitationem optio possimus ex quisquam reiciendis nemo deserunt, obcaecati eveniet quas! Corrupti aperiam culpa et maxime ipsa placeat, reprehenderit temporibus consequuntur esse voluptates rerum nemo quam ratione?
+                                Modi similique aut aliquid, suscipit illo minus quae aspernatur necessitatibus libero praesentium labore, reprehenderit ipsam qui assumenda perferendis delectus, asperiores nisi fuga atque deleniti vero eum et obcaecati corrupti! Odio!
+                                Molestias cupiditate animi labore, facere soluta suscipit explicabo voluptas eos nisi culpa magni! Dolorum repudiandae aliquid eum fuga impedit dignissimos quo voluptatem sit distinctio ipsa earum libero officia, et reprehenderit.
+                            </p>
+                        </div>
+                        <div class="section_show p-5" id="section2">
+                            <h2 class="mb-3">Content Section2</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos recusandae, culpa odit ipsum reiciendis! Repellat fugit ut, suscipit sit aperiam facilis error. Impedit iusto repudiandae dignissimos veniam! Officia, optio!
+                                Officiis sequi corporis exercitationem optio possimus ex quisquam reiciendis nemo deserunt, obcaecati eveniet quas! Corrupti aperiam culpa et maxime ipsa placeat, reprehenderit temporibus consequuntur esse voluptates rerum nemo quam ratione?
+                                Modi similique aut aliquid, suscipit illo minus quae aspernatur necessitatibus libero praesentium labore, reprehenderit ipsam qui assumenda perferendis delectus, asperiores nisi fuga atque deleniti vero eum et obcaecati corrupti! Odio!
+                                Molestias cupiditate animi labore, facere soluta suscipit explicabo voluptas eos nisi culpa magni! Dolorum repudiandae aliquid eum fuga impedit dignissimos quo voluptatem sit distinctio ipsa earum libero officia, et reprehenderit.
+                            </p>
+                        </div>
+                        <div class="section_show p-5" id="section3">
+                            <h2 class="mb-3">Content Section3</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos recusandae, culpa odit ipsum reiciendis! Repellat fugit ut, suscipit sit aperiam facilis error. Impedit iusto repudiandae dignissimos veniam! Officia, optio!
+                                Officiis sequi corporis exercitationem optio possimus ex quisquam reiciendis nemo deserunt, obcaecati eveniet quas! Corrupti aperiam culpa et maxime ipsa placeat, reprehenderit temporibus consequuntur esse voluptates rerum nemo quam ratione?
+                                Modi similique aut aliquid, suscipit illo minus quae aspernatur necessitatibus libero praesentium labore, reprehenderit ipsam qui assumenda perferendis delectus, asperiores nisi fuga atque deleniti vero eum et obcaecati corrupti! Odio!
+                                Molestias cupiditate animi labore, facere soluta suscipit explicabo voluptas eos nisi culpa magni! Dolorum repudiandae aliquid eum fuga impedit dignissimos quo voluptatem sit distinctio ipsa earum libero officia, et reprehenderit.
+                            </p>
+                        </div>
+                        <div class="section_show p-5" id="section4">
+                            <h2 class="mb-3">Content Section4</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos recusandae, culpa odit ipsum reiciendis! Repellat fugit ut, suscipit sit aperiam facilis error. Impedit iusto repudiandae dignissimos veniam! Officia, optio!
+                                Officiis sequi corporis exercitationem optio possimus ex quisquam reiciendis nemo deserunt, obcaecati eveniet quas! Corrupti aperiam culpa et maxime ipsa placeat, reprehenderit temporibus consequuntur esse voluptates rerum nemo quam ratione?
+                                Modi similique aut aliquid, suscipit illo minus quae aspernatur necessitatibus libero praesentium labore, reprehenderit ipsam qui assumenda perferendis delectus, asperiores nisi fuga atque deleniti vero eum et obcaecati corrupti! Odio!
+                                Molestias cupiditate animi labore, facere soluta suscipit explicabo voluptas eos nisi culpa magni! Dolorum repudiandae aliquid eum fuga impedit dignissimos quo voluptatem sit distinctio ipsa earum libero officia, et reprehenderit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+            var top_of_screen = $(window).scrollTop();
+
+            var top_of_section1 = $("#section1").offset().top;
+            var bottom_of_section1 = $("#section1").offset().top + $("#section1").outerHeight();
+
+            var top_of_section2 = $("#section2").offset().top;
+            var bottom_of_section2 = $("#section2").offset().top + $("#section2").outerHeight();
+
+            var top_of_section3 = $("#section3").offset().top;
+            var bottom_of_section3 = $("#section3").offset().top + $("#section3").outerHeight();
+
+            var top_of_section4 = $("#section4").offset().top;
+            var bottom_of_section4 = $("#section4").offset().top + $("#section4").outerHeight();
+
+            if ((bottom_of_screen > top_of_section1) && (top_of_screen < bottom_of_section1)) {
+                $('#item_list').html('<h3 class="d-flex align-items-center justify-content-center h-100">Section1</h3>');
+            } else {
+                if ((bottom_of_screen > top_of_section2) && (top_of_screen < bottom_of_section2)) {
+                    $('#item_list').html('<h3 class="d-flex align-items-center justify-content-center h-100">Section2</h3>');
+                } else {
+                    if ((bottom_of_screen > top_of_section3) && (top_of_screen < bottom_of_section3)) {
+                        $('#item_list').html('<h3 class="d-flex align-items-center justify-content-center h-100">Section3</h3>');
+                    } else {
+                        if ((bottom_of_screen > top_of_section4) && (top_of_screen < bottom_of_section4)) {
+                            $('#item_list').html('<h3 class="d-flex align-items-center justify-content-center h-100">Section4</h3>');
+                        } else {
+                            $('#item_list').html('<h3 class="d-flex align-items-center justify-content-center h-100">Section4</h3>');
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
